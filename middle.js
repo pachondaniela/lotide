@@ -4,7 +4,6 @@ const middle = function(array) {
   
   const middleIndex = Math.floor(array.length/2)
   
-  for (let i = 0 ; i < array.length ; i++){
     if(array.length === 1 || array.length === 2) {
       return []
     } else if (array.length % 2 === 0){
@@ -13,7 +12,7 @@ const middle = function(array) {
       return [array[middleIndex]]
     }
   }
-}
+
 
 
 
