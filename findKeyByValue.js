@@ -1,6 +1,6 @@
 const findKeyByValue = function (List , Show){
  for(let items in List) {
-  if(Show == List[items]){
+  if(Show === List[items]){
     return items
   }
 }
