@@ -1,18 +1,29 @@
 // Import functions
 
-const assertArraysEqual = require('../assertArraysEqual.js')
-const middle = require('../middle.js')
+const assert = require('chai').assert;
+const middle = require('../middle.js');
 
+// Test Cases 
 
-// Test cases for arrays of 1 OR 2 elements
-assertArraysEqual(middle([1]),[]); 
-assertArraysEqual(middle([1, 2]),[]);
+describe("#middle" , () => {
+  it("returns an empty array for arrays of 1 or 2 elements" , () => {
+    assert.deepEqual(middle([1]), []);
+    });
 
-// For arrays with Odd number of elements. 
-assertArraysEqual(middle([1,2,3]),[2])
-assertArraysEqual(middle([1,2,3,4,5]),[3])
+  it("returns [2] for [1,2,3]", () => {
+    assert.deepEqual(middle([1, 2, 3]), [2]); 
+  }); 
 
+  it("returns [3] for [1,2,3,4,5]", () => {
+  assert.deepEqual(middle([1,2,3,4,5]),[3]);
+  });
 
-// For arrays with Even number of elements
-assertArraysEqual(middle([1,2,3,4]),[2,3])
-assertArraysEqual(middle([1,2,3,4,5,6]),[3,4])
+  it("returns [2,3] for [1,2,3,4]", () => {
+  assert.deepEqual(middle([1,2,3,4]),[2,3]);
+  });
+
+  it("returns [3,4] for [1,2,3,4,5,6]", () => {
+  assert.deepEqual(middle([1,2,3,4,5,6]),[3,4]);
+  });
+
+});
