@@ -1,18 +1,4 @@
 // Function Implementation
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(` ✅ Assertion Passed:  ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-//Test Code
-
-assertEqual("Lighthouse Labs" , "Bootcamp");
-assertEqual(1,1);
-
 const countLetters = function (string) {
   const letterCounts = {};
 
@@ -28,12 +14,8 @@ const countLetters = function (string) {
  return letterCounts
 }
 
+module.exports = countLetters
 
 
 
 
-
-assertEqual(countLetters("lighthouse")["l"], 1);
-assertEqual(countLetters("lighthouse in the house")["l"], 1);
-assertEqual(countLetters("lighthouse in the house")["h"], 4);
-assertEqual(countLetters("Daniela")["D"], 1);
