@@ -1,15 +1,15 @@
 {
-  "name": "lotide",
+  "name": "@pachon.daniela/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "Lotide Library",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "Daniela Pachon",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.1",
